@@ -13,6 +13,7 @@
 
 	<properties>
 		<scalatra.version>2.2.0</scalatra.version>
+		<jetty.version>8.1.8.v20121106</jetty.version>
 	</properties>
 
 	<build>
@@ -70,6 +71,21 @@
 			<version>${scalatra.version}</version>
 			<scope>compile</scope>
 		</dependency>
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-server</artifactId>
+            <version>${jetty.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-servlet</artifactId>
+            <version>${jetty.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-webapp</artifactId>
+            <version>${jetty.version}</version>
+        </dependency>
 		
 		<!-- <dependency>
 			<groupId>org.scalatra</groupId>
@@ -101,12 +117,6 @@
 			<groupId>org.mockito</groupId>
 			<artifactId>mockito-all</artifactId>
 			<version>1.9.5</version>
-		</dependency>
-		<dependency>
-			<groupId>org.scala-lang</groupId>
-			<artifactId>scala-library</artifactId>
-			<version>2.10.1</version>
-			<scope>compile</scope>
 		</dependency>
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
