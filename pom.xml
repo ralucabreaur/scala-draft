@@ -71,6 +71,19 @@
 			<version>${scalatra.version}</version>
 			<scope>compile</scope>
 		</dependency>
+
+        <dependency>
+			<groupId>org.scalatra</groupId>
+			<artifactId>scalatra-json</artifactId>
+			<version>${scalatra.version}</version>
+		</dependency>
+        <dependency>
+            <groupId>org.json4s</groupId>
+            <artifactId>json4s-jackson_2.9.2</artifactId>
+            <version>3.2.4</version>
+        </dependency>
+
+
         <dependency>
             <groupId>org.eclipse.jetty</groupId>
             <artifactId>jetty-server</artifactId>
@@ -86,7 +99,7 @@
             <artifactId>jetty-webapp</artifactId>
             <version>${jetty.version}</version>
         </dependency>
-		
+
 		<!-- <dependency>
 			<groupId>org.scalatra</groupId>
 			<artifactId>scalatra-scalate</artifactId>
