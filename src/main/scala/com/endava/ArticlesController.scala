@@ -8,9 +8,6 @@ class ArticlesController extends ScalatraServlet with JacksonJsonSupport {
 
   protected implicit val jsonFormats: Formats = DefaultFormats
 
-  before() {
-    contentType = formats("json")
-  }
 
   get("/articles/:id") {
     val result = Map(
