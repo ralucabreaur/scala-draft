@@ -15,6 +15,7 @@
         <scalatra.version>2.2.0</scalatra.version>
         <jetty.version>8.1.8.v20121106</jetty.version>
         <scala.version>2.10.1</scala.version>
+        <cucumber.version>1.1.3</cucumber.version>
     </properties>
 
     <build>
@@ -99,24 +100,16 @@
             <scope>test</scope>
         </dependency>
 
-		<dependency>
-			<groupId>org.scalatra</groupId>
-			<artifactId>scalatra</artifactId>
-			<version>${scalatra.version}</version>
-			<scope>compile</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.scalatra</groupId>
-			<artifactId>scalatra-slf4j</artifactId>
-			<version>${scalatra.version}</version>
-			<scope>compile</scope>
-		</dependency>
-
         <dependency>
-			<groupId>org.scalatra</groupId>
-			<artifactId>scalatra-json</artifactId>
-			<version>${scalatra.version}</version>
-		</dependency>
+            <groupId>org.scalatra</groupId>
+            <artifactId>scalatra-json</artifactId>
+            <version>${scalatra.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.json4s</groupId>
+            <artifactId>json4s-core_2.9.2</artifactId>
+            <version>3.2.4</version>
+        </dependency>
         <dependency>
             <groupId>org.json4s</groupId>
             <artifactId>json4s-jackson_2.9.2</artifactId>
@@ -140,49 +133,40 @@
             <version>${jetty.version}</version>
         </dependency>
 
-		<!-- <dependency>
-			<groupId>org.scalatra</groupId>
-			<artifactId>scalatra-scalate</artifactId>
-			<version>${scalatra.version}</version>
-			<scope>compile</scope>
-		</dependency>	 -->
-		
-		<dependency>
-			<groupId>org.scalatra</groupId>
-			<artifactId>scalatra-specs2</artifactId>
-			<version>${scalatra.version}</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.scalatra</groupId>
-			<artifactId>scalatra-test</artifactId>
-			<version>${scalatra.version}</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.scalatra</groupId>
-			<artifactId>scalatra-scalatest</artifactId>
-			<version>${scalatra.version}</version>
-			<scope>test</scope>
-		</dependency>	
-		
-		<dependency>
-			<groupId>org.mockito</groupId>
-			<artifactId>mockito-all</artifactId>
-			<version>1.9.5</version>
-		</dependency>
-		<dependency>
-			<groupId>ch.qos.logback</groupId>
-			<artifactId>logback-classic</artifactId>
-			<version>1.0.13</version>
-			<scope>runtime</scope>
-		</dependency>
-<dependency>
+        <!-- <dependency>
+            <groupId>org.scalatra</groupId>
+            <artifactId>scalatra-scalate</artifactId>
+            <version>${scalatra.version}</version>
+            <scope>compile</scope>
+        </dependency>	 -->
+
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.0.13</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
             <groupId>com.rabbitmq</groupId>
             <artifactId>amqp-client</artifactId>
             <version>3.1.1</version>
         </dependency>
-	</dependencies>
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-scala</artifactId>
+            <version>${cucumber.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>${cucumber.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-core</artifactId>
+            <version>${cucumber.version}</version>
+        </dependency>
+    </dependencies>
 
     <repositories>
         <repository>
