@@ -1,6 +1,5 @@
 package com.endava
 
-import org.scalatra._
 import org.scalatra.test.scalatest._
 
 import org.junit.runner.RunWith

@@ -12,7 +12,7 @@
     <packaging>war</packaging>
 
     <properties>
-        <scalatra.version>2.2.0</scalatra.version>
+        <scalatra.version>2.2.1</scalatra.version>
         <jetty.version>8.1.8.v20121106</jetty.version>
         <scala.version>2.10.1</scala.version>
         <cucumber.version>1.1.3</cucumber.version>
@@ -60,16 +60,21 @@
     </build>
 
     <dependencies>
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-library</artifactId>
+            <version>2.10.1</version>
+        </dependency>
 
         <dependency>
             <groupId>org.scalatra</groupId>
-            <artifactId>scalatra</artifactId>
+            <artifactId>scalatra_2.10</artifactId>
             <version>${scalatra.version}</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>org.scalatra</groupId>
-            <artifactId>scalatra-slf4j</artifactId>
+            <artifactId>scalatra-slf4j_2.10</artifactId>
             <version>${scalatra.version}</version>
             <scope>compile</scope>
         </dependency>
@@ -83,36 +88,36 @@
 
         <dependency>
             <groupId>org.scalatra</groupId>
-            <artifactId>scalatra-specs2</artifactId>
+            <artifactId>scalatra-specs2_2.10</artifactId>
             <version>${scalatra.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.scalatra</groupId>
-            <artifactId>scalatra-test</artifactId>
+            <artifactId>scalatra-test_2.10</artifactId>
             <version>${scalatra.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.scalatra</groupId>
-            <artifactId>scalatra-scalatest</artifactId>
+            <artifactId>scalatra-scalatest_2.10</artifactId>
             <version>${scalatra.version}</version>
             <scope>test</scope>
         </dependency>
 
         <dependency>
             <groupId>org.scalatra</groupId>
-            <artifactId>scalatra-json</artifactId>
+            <artifactId>scalatra-json_2.10</artifactId>
             <version>${scalatra.version}</version>
         </dependency>
         <dependency>
             <groupId>org.json4s</groupId>
-            <artifactId>json4s-core_2.9.2</artifactId>
+            <artifactId>json4s-core_2.10</artifactId>
             <version>3.2.4</version>
         </dependency>
         <dependency>
             <groupId>org.json4s</groupId>
-            <artifactId>json4s-jackson_2.9.2</artifactId>
+            <artifactId>json4s-jackson_2.10</artifactId>
             <version>3.2.4</version>
         </dependency>
 

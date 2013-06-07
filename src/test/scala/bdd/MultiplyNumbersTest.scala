@@ -5,10 +5,11 @@ import org.scalatest.matchers._
 import scala.collection.mutable.{Map=> MutableMap}
 import org.junit.runner.RunWith
 import org.scalatest.junit.JUnitRunner
+import org.scalatest.Suite
 
 
 @RunWith(classOf[JUnitRunner])
-class MultiplyNumbersTest extends ScalaDsl with EN with ShouldMatchers{
+class MultiplyNumbersTest extends ScalaDsl with EN with ShouldMatchers with Suite {
 
   val vars = MutableMap[String,Int]()
   var result = 0
